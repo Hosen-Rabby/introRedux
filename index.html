@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redux-Counter</title>
+
+    <!-- import redux cdn -->
+    <script src="https://unpkg.com/redux@4.2.1/dist/redux.min.js"></script>
+
+    <!-- styel -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      #count {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .counter_section {
+        width: 300px;
+        text-align: center;
+        background-color: goldenrod;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .count_btn {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .acc_btn button {
+        padding: 5px 15px;
+        color: white;
+        background-color: cadetblue;
+        border: 2px solid cadetblue;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter_section">
+      <p id="count"></p>
+      <div class="count_btn">
+        <div class="increase_btn acc_btn">
+          <button type="button" id="increment">Increment</button>
+        </div>
+        <div class="decrease_btn acc_btn">
+          <button id="decrement" type="button">Decrement</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
